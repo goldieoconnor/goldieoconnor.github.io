@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Net Art Page 1</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: none;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 1600px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .white-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .green-pattern {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      height: 90%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    .collage-container {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 100px;
+      gap: 0;
+    }
+
+    .polaroid {
+      width: 260px;
+      background: white;
+      padding: 12px;
+      margin-left: -60px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transform: rotate(var(--rotate));
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .polaroid img {
+      width: 100%;
+      display: block;
+    }
+
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.05);
+      z-index: 10;
+    }
+
+    .polaroid:first-child {
+      margin-left: 0;
+    }
+
+    .quote-text {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 1200px;
+      text-align: center;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      padding: 20px;
+      color: #333;
+      z-index: 3;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
+      .next-arrow {
+          position:absolute;
+          top: calc(100%-100%px);
+          left:50%;
+          transform: translateX(-50%);
+          font-size: 2.5rem;
+          text-decoration: none;
+          color: #333;
+          background: rgba(255,255,255,0.6);
+          padding: 10px 20px;
+          border-radius: 50%;
+         font-weight: bold;
+          z-index: 4;
+          transition: background 0.3s,transform 0.2s;
+      }
+      .next-arrow:hover {
+          background: rgba(255,255,255,0.85);
+          transform: translateX(-50%) scale(1:1);
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="paperbackground.png" class="white-bg" alt="white paper background">
+    <img src="greenpattern.png" class="green-pattern" alt="green pattern background">
+
+    <div class="collage-container">
+      <div class="polaroid" style="--rotate: -8deg;">
+        <img src="fall.png" alt="fall nature">
+      </div>
+      <div class="polaroid" style="--rotate: 6deg;">
+        <img src="quote.png" alt="only human quote">
+      </div>
+      <div class="polaroid" style="--rotate: -5deg;">
+        <img src="spring.png" alt="spring picnic">
+      </div>
+    </div>
+
+    <div class="quote-text">
+      Life is a beautiful journey, filled with ups and downs, just like the changing seasons.
+      Each day is a new page in our story, where moments of joy and sadness dance together.
+      We laugh with friends, find peace in quiet moments, and learn from our mistakes. 
+        <br>
+     <a href="netart2.html" class="next-arrow">→</a>
+      
+      </div>
+  </div>
+</body>
+</html>
