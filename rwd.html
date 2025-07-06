@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interior Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+       .intro {
+        max-width: 700px;
+        margin: 40px auto 20px auto;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .gallery img:hover {
+        transform: scale(1.03);
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 599px) {
+        .gallery img:nth-child(n+4) {
+          display: none;
+        }
+      }
+
+      @media (min-width: 600px) and (max-width: 1080px) {
+        .gallery img:nth-child(n+6) {
+          display: none;
+        }
+      }
+    </style>
+
+  </head> 
+
+  <body>
+    
+    <div class=intro>
+    <p> These are a collective of photos that have inspired my new home's interior design. 
+      I am being intentional about each room and pouring love into every piece as I go. Click on the pictures to get a better view.</p>
+    <div class="gallery">
+      <img src="interior1.jpg" alt="Interior 1" />
+      <img src="interior2.jpg" alt="Interior 2" />
+      <img src="interior3.jpg" alt="Interior 3" />
+      <img src="interior4.jpg" alt="Interior 4" />
+      <img src="interior5.jpg" alt="Interior 5" />
+      <img src="interior6.jpg" alt="Interior 6" />
+      <img src="interior7.jpg" alt="Interior 7" />
+    </div>
+
+    <div class="modal" id="imageModal">
+      <img id="modalImage" src="" alt="Enlarged Interior" />
+    </div>
+
+    <script>
+      const galleryImages = document.querySelectorAll(".gallery img");
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+
+      galleryImages.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "flex";
+          modalImage.src = img.src;
+          modalImage.alt = img.alt;
+        });
+      });
+
+      modal.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
