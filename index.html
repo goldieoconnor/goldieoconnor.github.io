@@ -2,34 +2,126 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>index page</title>
-    </head>
-    <body style="background-color: steelblue">
-    <h1 style="color:mediumblue"> Goldie O'Connor - Portfolio</h1>
-    <p style="color:mediumblue"> A Junior Graphic Designer looking for hands on experience to gain
-        knowledge and to jump start me into my career. I am preferebly remote, but am open to 
-        coming into an office when I need to. I am eager to learn and ready to dive in.
-        </p>  
-    <a href="page1.html">Learn about me</a>
-        <br>
-        <a href="gifshowcase.html">Gif Showcase </a>
-        <br>
-        <a href="404.html">404</a>
-        <br>
-        <a href="netart1.html"> Net Art</a>
-        <br>
-        <a href="story1.html"> HTML Story</a>
-        <br>
-        <a href="landscape.html"> P.5 Landscape</a>
-        <br>
-        <a href="p5-selfportrait.html"> P.5 Self Portrait </a>
-        <br>
-        <a href="rwd.html">RWD</a>
-        <br>
-        <a href="portfolio.html">Portfolio</a>
-        <br>
-        <a href="style.html"> Styleguide</a>
-       
-
-    </body>
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+    <title>Portfolio</title>
+      
+</head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #3e3a36;
+            color: #efe8db
+            font-family: Georgia, serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid #efe8db
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #efe8db;
+            text-decoration: none;
+        }
+        
+        nav a {
+            margin-left: 40px;
+            text-decoration: none;
+            color: #efe8db;
+            font-size: 20px;
+        }
+        
+        main{
+            padding: 80px 60px
+        }
+        .intro{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between
+            gap: 40px;
+        }
+        
+        .text {
+            flex: 1 1 50%;
+            min-width: 300px;
+        }
+        
+        
+        .intro h1 {
+            font-family: , Helvetica, sans-serif;
+            font-size: 100px;
+            line-height: 1.1;
+            margin-bottom: 40px;
+            color: #efe8db;
+        }
+        .button {
+            display: inline-block;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            padding: 12px 30px;
+            color: #efe8db;
+            border: 1px solid #efe8db;
+            border-radius: 30px;
+            text-decoration:none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover{
+            background-color: #efe8db;
+            color: #3e3a36;
+        }
+        .graphic {
+            flex: 1 1 40%;
+            min-width: 280px;
+            max-width: 500%;
+            text-align: center;
+        
+        }
+        .graphic img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+        }
+        .graphic img: hover {
+            transform: translateY(-10px) scale(1.03);
+        }
+        @media (max-width:900px;) {
+            .intro{
+                flex-direction: column;
+                text-align: center;
+            }  
+            .intro h1 {
+                font-size: 60px;
+            }
+            .button {
+            margin-top: 20px;
+            }
+        }
+        
+         </style>
+    <header>
+    <a href="index.html" class="logo">GO</a>
+    <nav>
+    <a href="work.html">WORK</a>
+    <a href="About.html">ABOUT</a>
+    <a href="Contact.html">CONTACT</a>
+        </nav>
+     </header>
+    <main>
+    <div class="intro">
+    <div class="text">
+    <h1> HEY<br> THERE, <br> I'M GOLDIE</h1> 
+    <a href="work.html" class="button"> SEE MY WORK</a>
+     </div>
+    <div class="graphic">
+     <img src="graphic.png" alt="portfolio graphic" >
+        </div>
+     </div>
+ </main>
 </html>
+
+    
