@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <title>About Page</title>
+    </head>
+    <style> 
+        body{
+            margin: 0;
+            background-color: #efe8db;
+            color: #584738;
+            font-family: Georgia, serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid #584738;
+        }
+        .logo {
+            font-size: 32px;
+            text-decoration: none;
+            color: #584738;
+            font-family: Georgia, serif;
+        }
+        nav a {
+            margin-left: 40px;
+            text-decoration: none;
+            color: #584738;
+            font-size: 18px;
+            font-family: Georgia, serif;
+            font-weight: normal;
+
+        }
+        nav a:hover {
+            text-decoration: none;
+        }
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 60px;
+        }
+        .about-text {
+            max-width: 55%
+        }
+        
+        .about-text h2 {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .about-text h1 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+        
+        .intro {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .name {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+            margin: 10px 0 20px 0;
+        }
+        .subhead {
+            font-family: Georgia, serif;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        
+        
+        .about-text h3 {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            margin-bottom: 30px;
+            margin-top: 0;
+            font-weight: normal;
+        }
+       
+        .about-text p {
+        font-family: Georgia, serif;
+        font-size: 16px;
+       line-height: 1.6;
+        margin-bottom: 20px;
+        }
+        
+        .closing-line {
+            margin-top: 24px;
+        }
+        
+        .about-image img {
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #584738;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+        
+        .about-image {
+            margin: 40px 0 0 0;
+        }
+         
+            .about-text {
+                max-width: 100;
+            }
+        }
+        
+        
+    </style>
+   
+    <body>
+    <header>
+    <a href="index.html" class="logo"> GO</a>
+    <nav>
+     <a href="work.html"> WORK</a>   
+    <a href="about.html"> ABOUT</a>
+    <a href="Contact.html">CONTACT</a>
+     </nav>
+     </header>
+       
+      <section class="about-section">
+      <div class="about-text">
+        <h1> MEET</h1>  
+        <h2> GOLDIE O'CONNOR</h2>
+          <h3> THE NAME BEHIND THE DESIGN</h3>
+          <p> FOUNDER AND CREATOR</p>
+          <p> Hi! I'm Goldie – a graphic designer passionate about turning ideas into visuals that feel just right. I'm currently pursuing 
+              my BFA in Graphic Design, with graduation expected in 2026. I'm focused on helping people feel proud of how their business looks 
+              and communicates. My work spans branding, print design, and basic front-end (HTML/CSS), with experience using Adobe Creative Suite 
+              and AI-powered design tools. 
+              I love bringing visions to life—blending thoughtful strategy with strong visuals to create designs that connect and inspire.
+          </p>
+           </div>
+          <div class="about-image">
+          <img src="about.png" alt="Goldie O'Connor"/>
+          
+          
+          
+          </div>
+        </section>
+     </body>
+</html>

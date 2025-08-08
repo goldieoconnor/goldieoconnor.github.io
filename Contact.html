@@ -2,7 +2,78 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Contact Page</title>
     </head>
-    <body></body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #cabead;
+            font-family: Georgia, serif;
+            color: #584738
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 2px solid #584738;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 28px;
+            text-decoration: none;
+            color: #584738;
+            font-family: Georgia, serif;
+        }
+        nav a {
+            margin-left: 40px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 18px;
+            color: #584738;
+            font-family: Georgia, serif;
+        }
+        
+        nav a: hover {
+            text-decoration: none;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 80px);
+            text-align-last: center;
+            font-size: 20px;
+            line-height: 1.8;
+            font-family: Georgia, serif;
+            font-weight: normal;
+            color: #584738;
+        }
+    </style>
+    
+    
+    <body>
+    <header>
+     <a href="index.html" class="logo">GO</a>
+    <nav>
+     <a href="work.html">WORK</a>   
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+         </nav>
+        </header>
+        <div class="contact-info">
+        <div>Goldie O'Connor</div>
+        <div> Phone: (850) 417-3950</div>
+        <div> Email: groseoconnor@gmail.com</div>
+        
+        
+        
+        </div>
+    </body>
 </html>
